@@ -1,0 +1,225 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 2vh;
+  padding: 0 3rem;
+  text-align: center;
+  background-color: cornflowerblue;
+  color: white;
+  min-height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+h1, h2, h5, h6, header p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+#hamburger, header > label {
+  display: none;
+}
+
+main {
+  margin: 2vh;
+  border: solid 0.5vh goldenrod;
+  min-height: 55vh;
+  background-color: lightgray;
+}
+
+section {
+  color: indigo;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+#importante {
+  border-top-width: 3px;
+}
+
+.destaque {
+  font-style: italic;
+  background-color: white;
+}
+
+section > p {
+  padding: 0.5em;
+  border: solid 1px azure;
+  border-radius: inherit;
+}
+
+.flex-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+}
+
+.galery {
+  font-size: 1.8vw;
+  display: grid;
+  grid-gap: 8vw;
+  grid-template-columns: repeat(4, 14vw);
+  margin: 1rem;
+  border-radius: inherit;
+}
+
+.card {
+  height: 23vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid 1px azure;
+  border-radius: inherit;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.card img {
+  height: 14vh;
+  min-height: 105px;
+  min-width: 75px;
+  max-width: 8vw;
+}
+.card > h5 {
+  align-self: flex-end;
+}
+
+nav.link-list {
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  border: solid 0.5vh coral;
+}
+
+footer {
+  margin: 2vh;
+  color: azure;
+  min-height: 15vh;
+  grid-area: footer;
+  background-color: mediumpurple;
+}
+
+footer p {
+  padding-top: 2em;
+  text-align: center;
+  overflow: wrap;
+}
+
+@media (max-width: 600px) {
+  
+  #hamburger {
+    visibility: hidden;
+  }
+
+  .galery {
+    font-size: 0.7rem;
+    grid-gap: 5vw;
+    grid-template-columns: repeat(3, minmax(90px, 21vw));
+  }
+
+  .card {
+    min-height: 154px;
+  }
+  header p {
+    display: none;
+  }
+
+  #hamburger + label {
+    position: absolute;
+    left: 6px;
+    top: -3px;
+    visibility: visible;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: solid 8px transparent;
+    border-bottom: solid 12px currentcolor; 
+    z-index: 3;
+  }
+
+  #hamburger + label + article::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 2;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: solid 2px currentcolor;
+    border-radius: 50%;
+  }
+
+  #hamburger:checked + label {
+    top: 11px;
+    border: solid 8px transparent;
+    border-top: solid 12px currentcolor;
+  }
+
+  #hamburger:checked ~ article p {
+    display: block;
+  }
+
+  main {
+    min-height: 460px;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .galery {
+    grid-gap: 8vw;
+    grid-template-columns: repeat(2, 90px);
+  }
+
+  .card img {
+    max-width: 75px;
+  }
+}
+
+@media (max-width: 290px) {
+
+  .galery {
+    grid-template-columns: 90px;
+  }
+
+  body {
+    min-width: 180px;
+  }
+}
+
+#feedback {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 180px;
+  padding: 3rem;
+}
+#feedback label {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+}
+#feedback input[type="submit"] {
+  width: 70px;
+  align-self: flex-end;
+}
+#feedback label > * {
+  border-radius: 4px;
+  border: solid 2px azure;
+}

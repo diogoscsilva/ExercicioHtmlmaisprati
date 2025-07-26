@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chrset="UTF-8" lang="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Minha jornada dev</h1>
+      <input id="hamburger" type="checkbox"/>
+      <label for="hamburger"></label>
+      <article>
+        <p>
+          Uma apresentação da busca pessoal por habilidades e conhecimento.
+        </p>
+      </article>
+    </header>
+    <main>
+		  <section>
+        <h2>Missão</h2>
+        <p>
+          Inovar e criar <span class="destaque">ferramentas digitais</span> que aprimorem empreendimentos através da automação de processos e representação das regras de negócio.
+        </p>
+      </section>
+      <section>
+        <h2> Visão </h2>
+        <p id="importante">
+          Alcançar vantagem competitiva no mercado por meio de gestão estratégica suportada por modelos digitais.
+        </p>
+      </section>
+      <section>
+        <h2>Livros de referência</h2>
+        <div class="flex-conteiner">
+          <div class="galery">
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/61aIS4n2jZL._SY522_.jpg" alt="capa do livro" />
+              <h5>Domain Driven Design</h5>
+              <h6>Erick Evans</h6>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/81csG1Z+6eL._SY522_.jpg" alt="capa do livro" />
+              <h5>O melhor do JavaScript</h5>
+              <h6>Douglas Crockford</h6>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/7146AYGD0AL._AC_UL480_FMwebp_QL65_.jpg" alt="capa do livro" />
+              <h5>A Philosophy of Software Design</h5>
+              <h6>John K. Ousterhout</h6>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/61Y0IuO7XTL._SY522_.jpg" alt="capa do livro" />
+              <h5>Implementando Domain-Driven Design</h5>
+              <h6>Vaughn Vernon</h6>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/81MoX-JFAlL._SY466_.jpg" />
+              <h5>Use a Cabeça! Padrões de Projetos</h5>
+              <h6>Elisabeth Freeman, Eric Freeman</h6>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/81gq4TcAmQL._AC_UL480_FMwebp_QL65_.jpg" />
+              <h5>Desenvolvimento Real de Software</h5>
+              <h6>Raoul-Gabriel Urma, Richard Warburton</h6>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/61HqdtM-YPL._AC_UL480_FMwebp_QL65_.jpg" />
+              <h5>Starting to Unit Test: Not as Hard as You Think</h5>
+              <h6>Erik Dietrich</h6>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/61cDxGe2YUL._AC_UL480_FMwebp_QL65_.jpg" />
+              <h5>Crafting Interpreters</h5>
+              <h6>Robert Nystrom</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <form id="feedback">
+          <label> Nome: <input type="text" name="nome" placeholder="digite aqui o seu nome"/> </label>
+          <label> Endereço: <input type="text" name="endeço" placeholder="digite aqui o seu endereço"/> </label>
+          <label> E-mail: <input type="email" name="email" placeholder="digite aqui o seu e-mail"/> </label>
+          <label> Tipo de feedback: <select name="tipo">
+            <option value="elogio">Elogio</option>
+            <option value="segestao">Sugestão</option>
+            <option value="critica">Crítica</option>
+            <option value="outros">Outros</option>
+          </select></label>
+          <label> Comentário: <textarea placeholder="digite aqui o seu feedback"> </textarea></label>
+          <input type="submit" value="Enviar"/>
+        </form> 
+      </section>
+      <section>
+        <article>
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Marcenaria</li>
+            <li>Jogar tênis</li>
+            <li>Cozinhar</li>
+            <li>Andar de Caiaque</li>
+            <li>Assistir séries</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Receita de feijão carioca</h3>
+          <ol>
+            <li>Deixe 2 xícaras de feijão de molho em água, com 2 colheres se sopa de vinagre durante 30 minutos, depois retire a adia água e encharque o  feijão.</li>
+            <li>Em fogo baixo, refogar 2 dentes de alho amassados e 2 colheres de sopa de óleo de soja em uma panela de pressão aberta.</li>
+            <li>Acrescente o feijão, água até cobrir o feijão em 2 dedos, 2 colheres de coloral, 3 colheres de café de sal e feche a panela de pressão</li>
+            <li>Após pegar pressão, deixe cozinhar por 30 minutos e desligue o fogo</li>
+            <li>Após a panela perder naturalmente toda a pressão,abra a tampa, volte cozinhar com o fogo baixo. De vez enquanto meixa o feijão e acrescente água para não queimar no fundo da panela. Quando o molho estiver esperando está pronto. Só servir, e bom apetite!</li>
+          </ul>
+        </article>
+          <h3>Livros gratuitos online</h3>
+          <nav class="link-list">
+            <a href="https://daedtech.com/starting-to-unit-test-not-as-hard-as-youd-think/" target="_blank" rel="noopener noreferer">Starting to Unit Test: Not as Hard as You Think</a>
+            <a href="https://craftinginterpreters.com/contents.html" target="_blank" rel="noopener noreferer">Crafting Interpreters</a>
+            <a href="https://github.com/cezaraugusto/You-Dont-Know-JS" target="_blank" rel="noopener noreferer">You Don't Know JS - pt-BR</a>
+            <a href="https://engsoftmoderna.info/" target="_blank" rel="noopener noreferer">Engenharia de Software Moderna</a>
+          </nav>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright: Diogo Santoro Costa da Silva
+      </p>
+    </footer>
+  </body>
+</html>
